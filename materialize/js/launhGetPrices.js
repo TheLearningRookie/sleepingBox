@@ -14,3 +14,8 @@
   $('.button-collapse').sideNav('hide');
   // Destroy sideNav
   $('.button-collapse').sideNav('destroy');
+
+
+  $(document).ready(function() {
+    $('select').material_select();
+  });
