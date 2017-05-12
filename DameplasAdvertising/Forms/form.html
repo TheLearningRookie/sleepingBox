@@ -7,89 +7,132 @@
 		<link rel='stylesheet' href='../../materialize/css/dameplasPricing.css'>
 		<meta charset='UTF-8' name='viewport'>
 	</head>
-	<body> 
-		<div class="row">
-			<form class="col s12">
-				<div class='col s1'>
-					Plaque:
-				</div>
-				<div class="row">
-					<div class="col s3">
-						<div class="input-field inline">
-							<input type="number" class="validate" min='4' max='10'>
-							<label data-error="invalid" data-success="right">length</label>
-						</div>
-					</div>
-					<div class="col s3">
-						<div class="input-field inline">
-							<input type="number" class="validate" min='4' max='10'>
-							<label data-error="invalid" data-success="right">width</label>
-						</div>
-					</div>
-					<div class="col s3">
-						<div class="input-field inline">
-							<input id="quantity" type="number" class="validate">
-							<label for="quantity" data-error="invalid input" data-success="right">quantity</label>
-						</div>
-					</div>
-					<div class="input-field col s2">
-						<select>
-							<option value="" disabled selected>Choose your option</option>
-							<option value="1">acrylic plaque</option>
-							<option value="2">plaque w/ frame</option>
-						</select>
-						<label>Plaque Type</label>
-					</div>
-				</div>
-			</form>
-		</div>
-		<div class="row">
-			<form class="col s12">
-				<div class='row'>
+	<body>
+
+
+
+
+<!-- Plaque Start-->
+		<div class='plaqueArea'>
+			<div class="row">
+				<form class="col s12">
 					<div class='col s1'>
 						Plaque:
 					</div>
-					<div class='col s3'>
-						<p class="range-field">
-							<input type="range" id="length" min="4" max="15" name='lengthInput' oninput='lengthOutput.value = lengthInput.value;'/>
-							length
-							&emsp; &emsp; &emsp; &emsp;
-							<output name='lengthOutput'></output>
-						</p>
+					<div class="row">
+						<div class="col s3">
+							<div class="input-field inline">
+								<input type="number" class="validate" min='4' max='10'>
+								<label data-error="invalid" data-success="right">length</label>
+							</div>
+						</div>
+						<div class="col s3">
+							<div class="input-field inline">
+								<input type="number" class="validate" min='4' max='10'>
+								<label data-error="invalid" data-success="right">width</label>
+							</div>
+						</div>
+						<div class="col s3">
+							<div class="input-field inline">
+								<input id="quantity" type="number" class="validate" min='1'>
+								<label for="quantity" data-error="invalid input" data-success="right">quantity</label>
+							</div>
+						</div>
+						<div class="input-field col s2">
+							<select>
+								<option value="" disabled selected>choose your option</option>
+								<option value="1">acrylic plaque</option>
+								<option value="2">plaque w/ frame</option>
+							</select>
+							<label>plaque type</label>
+						</div>
 					</div>
-					<div class='col s3'>
-						<p class="range-field">
-							<input type="range" id="width" min="4" max="15" name='widthInput' oninput='widthOutput.value = widthInput.value;'/>
-							width
-							&emsp; &emsp; &emsp; &emsp;
-							<output name='widthOutput'></output>
-						</p>
-					</div>
-					<div class='col s3'>
-						<p class="range-field">
-							<input type="range" id="quantity" min="1" max="150" name='quantityInput' oninput='quantityOutput.value = quantityInput.value;'/>
-							quantity
-							&emsp; &emsp; &emsp; &emsp;
-							<output name='quantityOutput'></output>
-						</p>
-					</div>
+				</form>
+			</div>
+
+
+
+
+
+			<div class="row">
+				<form class="col s12">
 					<div class='row'>
 						<div class='col s1'>
-						<p>
-						  <input name="plaqueType" type="radio" id="acrylicId" />
-						  <label for="acrylicId">acrylic</label>
-						</p>
+							Plaque:
 						</div>
-						<div class='col s1'>
-							<p>
-							  <input name="plaqueType" type="radio" id="wframeId" />
-							  <label for="wframeId">framed</label>
+						<div class='col s3'>
+							<p class="range-field">
+								<input type="range" id="length" min="4" max="15" name='lengthInput' oninput='lengthOutput.value = lengthInput.value;'/>
+								length
+								&emsp; &emsp; &emsp; &emsp;
+								<output name='lengthOutput'></output>
 							</p>
 						</div>
+						<div class='col s3'>
+							<p class="range-field">
+								<input type="range" id="width" min="4" max="15" name='widthInput' oninput='widthOutput.value = widthInput.value;'/>
+								width
+								&emsp; &emsp; &emsp; &emsp;
+								<output name='widthOutput'></output>
+							</p>
+						</div>
+						<div class='col s3'>
+							<p class="range-field">
+								<input type="range" id="quantity" min="1" max="350" name='quantityInput' oninput='quantityOutput.value = quantityInput.value;'/>
+								quantity
+								&emsp; &emsp; &emsp; &emsp;
+								<output name='quantityOutput'></output>
+							</p>
+						</div>
+						<div class='row'>
+							<div class='col s1'>
+							<p>
+							  <input name="plaqueType" type="radio" id="acrylicId" />
+							  <label for="acrylicId">acrylic</label>
+							</p>
+							</div>
+							<div class='col s1'>
+								<p>
+								  <input name="plaqueType" type="radio" id="wframeId" />
+								  <label for="wframeId">framed</label>
+								</p>
+							</div>
+						</div>
 					</div>
+				</form>
+			</div>
+		</div>
+
+<!-- Plaque End-->
+
+<!-- Medal Start-->
+		<div class='medalArea'>
+			<form class='formAlign'>
+				<div class='col s1'>
+					Medal
+				</div>
+				<div class='input-field'>
+					<input type='number' class='validate' min='1' max='20' step='0.5' id='medal'>
+					<label data-error='invalid' data-success='right'>diameter</label>
+				</div>
+				<div class="input-field">
+					<input id="quantity" type="number" class="validate" min='1'>
+					<label for="quantity" data-error="invalid input" data-success="right">quantity</label>
+				</div>
+				<div class='input-field'>
+					<select>
+						<option value='' disabled selected>choose your option</option>
+						<option value='1'>metal engrave</option>
+						<option value='2'>acrylic w/ metal</option>
+						<option value='3'>stainless buildup</option>
+						<option value='4'>flat type</option>
+					</select>
+					<label>medal type</label>
 				</div>
 			</form>
 		</div>
+<!-- Medal End-->
+
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="../../materialize/js/materialize.js"></script>
     <script type="text/javascript" src="../../materialize/js/launhGetPrices.js"></script>
