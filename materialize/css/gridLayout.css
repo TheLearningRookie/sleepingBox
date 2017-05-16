@@ -1,0 +1,11 @@
+.formLayout{
+	display: grid;
+	grid-template-columns: [first] 15% [second] auto [third] 40% [fourth];
+	grid-template-rows: [first] 10% [second] auto [third] 50% [fourth];
+}
+.pricingArea{
+	grid-row-start: second;
+	grid-row-end: third;
+	grid-column-start: third;
+	grid-column-end: fourth;
+}

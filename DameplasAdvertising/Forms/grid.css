@@ -1,0 +1,23 @@
+.container{
+	display: grid;
+	grid-template-rows: 15% auto 15%;
+	grid-template-columns: 5% 10% auto 10% 10% 10% 5%;	
+}
+.navigation{
+	display: grid;
+	/*grid-template-columns: 5% 10% auto 10% 10% 10% 5%;*/
+}
+.home{
+	display: grid;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+.price{
+	display: grid;
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}

@@ -1,0 +1,38 @@
+td, th {
+  padding: 20px 20px !important;
+  display: table-cell !important;
+  text-align: center !important;
+  vertical-align: middle !important;
+  border-radius: 2px !important;
+  font-size: 16px !important;
+  font-weight: 300 !important;
+}
+table{
+	width: 135% !important;
+}
+#compName{
+	font-family: merryweather;
+	font-weight: bold;
+	text-align: center;
+}
+.medalArea{
+	display: grid;
+	grid-template-columns: 200px 30% auto;
+}
+.formAlign{
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+.nav-wrapper{
+	background-color: #fff !important;
+}
+.sideNavigation{
+	padding-top: 38%;
+}
+.price{
+	margin-top: -20px;
+	margin-left: 10px;
+}
+.priceResult{
+	margin-top: 100px;
+}

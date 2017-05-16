@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html ng-app>
+	<head>
+		<title>Prices: Medal</title>
+		<link  rel='stylesheet' href='http://fonts.googleapis.com/icon?family=Material+Icons'>
+		<link rel='stylesheet' href='../../materialize/css/materialize.css'>
+		<link rel='stylesheet' href='../../materialize/css/dameplasPricing.css'>
+		<meta charset='UTF-8' name='viewport'>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class='nav-wrapper'>
+					<ul class='left'>
+						<li><a class='waves-effect' href='../index.html'>Home</a></li>
+					</ul>
+					<ul class='right'>
+						<li><a class='waves-effect' href='../getPrices.html' data-activates='slide-out'>Get Prices</a></li>
+						<li><a class='waves-effect' href='#'>Price List</a></li>
+						<li><a class='waves-effect' href='#'>Admin</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<section class="side-nav fixed">
+			<ul class='sideNavigation'>
+				<li><a class='waves-effect' href='itemPlaque.html'>Plaque</a></li>
+				<li><a class='waves-effect' href='itemMedal.html'>Medal</a></li>
+				<li><a class='waves-effect' href='itemNameplate.html'>Nameplate</a></li>
+				<li><a class='waves-effect' href='#'>Trophy</a></li>
+			</ul>
+		</section>
+		<main class='left' style='margin-left: 25%;'>
+			<table class='highlight'>
+				<thead>
+					<tr>
+						<td>size</td>
+						<td>price</td>
+					</tr>
+				</thead>
+				<tbody>	
+					<tr>
+						<td>4</td>
+						<td>45</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>50</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>60</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+		<form class='right' style='width: 15%;'>
+			<div class="input-field">
+				<input type="number" ng-model='dinhi' class="validate" min='1' max='100' step='0.5'>
+				<label data-error="invalid" data-success="right">diameter</label>
+			</div>
+			<div class="input-field">
+				<select>
+					<option value="" disabled selected>choose your option</option>
+					<option value="1">metal engrave</option>
+					<option value="2">acrylic w/ metal</option>
+					<option value="3">stainless builduo</option>
+					<option value="4">flat type</option>
+				</select>
+				<label>medal type</label>
+			</div>
+		<div class='priceResult'>
+			<p>PHP</p>
+			<h1 class='price'>{{dinhi}}</h1>
+		</div>
+		</form>
+	<script type="text/javascript" src="../../materialize/js/offline.js"></script>
+    <script type="text/javascript" src="../../materialize/js/materialize.js"></script>
+    <script type="text/javascript" src="../../materialize/js/launhGetPrices.js"></script>
+    <script type='text/javascript' src='../../materialize/js/angularOffline.js'></script>
+	</body>
+</html>
