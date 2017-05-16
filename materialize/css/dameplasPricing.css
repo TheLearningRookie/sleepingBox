@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 td, th {
   padding: 20px 20px !important;
   display: table-cell !important;
@@ -9,6 +10,10 @@ td, th {
 }
 table{
 	width: 135% !important;
+=======
+.nav-wrapper{
+	background-color: #bec1c6;
+>>>>>>> 1d8763bb95244f67e4ce90c1969b30ad483a4112
 }
 #compName{
 	font-family: merryweather;
@@ -23,6 +28,7 @@ table{
 	grid-column-start: 2;
 	grid-column-end: 3;
 }
+<<<<<<< HEAD
 .nav-wrapper{
 	background-color: #fff !important;
 }
@@ -36,3 +42,5 @@ table{
 .priceResult{
 	margin-top: 100px;
 }
+=======
+>>>>>>> 1d8763bb95244f67e4ce90c1969b30ad483a4112
