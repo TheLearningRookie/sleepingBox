@@ -1,0 +1,17 @@
+#body{
+	margin-left: 300px;
+}
+
+.side-nav{
+	margin-top: 64px;
+	z-index: -1;
+}
+.header{
+	margin: auto;
+}
+.box{
+	height: 20px;
+	width: 20px;
+	margin: auto;
+	background-color: blue;
+}
